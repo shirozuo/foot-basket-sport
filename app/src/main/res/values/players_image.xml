@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="football_players_image">
+        <item>@drawable/football_player_1</item>
+        <item>@drawable/football_player_2</item>
+        <item>@drawable/football_player_3</item>
+        <item>@drawable/football_player_4</item>
+        <item>@drawable/football_player_5</item>
+        <item>@drawable/football_player_6</item>
+        <item>@drawable/football_player_7</item>
+        <item>@drawable/football_player_8</item>
+        <item>@drawable/football_player_9</item>
+        <item>@drawable/football_player_10</item>
+    </integer-array>
+
+    <integer-array name="basketball_players_image">
+        <item>@drawable/basketball_player_1</item>
+        <item>@drawable/basketball_player_2</item>
+        <item>@drawable/basketball_player_3</item>
+        <item>@drawable/basketball_player_4</item>
+        <item>@drawable/basketball_player_5</item>
+        <item>@drawable/basketball_player_6</item>
+        <item>@drawable/basketball_player_7</item>
+        <item>@drawable/basketball_player_8</item>
+        <item>@drawable/basketball_player_9</item>
+        <item>@drawable/basketball_player_10</item>
+    </integer-array>
+</resources>
