@@ -3,4 +3,8 @@
     <string name="left_button">Футбол</string>
     <string name="right_button">Баскетбол</string>
     <string name="header_home">Sport 24/7</string>
+    <string name="rules">Правила</string>
+    <string name="peoples">Игроки</string>
+    <string name="gallery">Галерея</string>
+
 </resources>

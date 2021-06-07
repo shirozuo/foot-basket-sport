@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_rules"
+        android:icon="@drawable/icons8_terms_and_conditions_24px"
+        android:title="@string/rules"/>
+    <item
+        android:id="@+id/action_peoples"
+        android:icon="@drawable/icons8_people_24px"
+        android:title="@string/peoples"/>
+    <item
+        android:id="@+id/action_gallery"
+        android:icon="@drawable/icons8_image_24px_3"
+        android:title="@string/gallery"/>
+
+
+</menu>
