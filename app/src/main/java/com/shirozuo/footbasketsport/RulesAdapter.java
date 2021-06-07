@@ -16,7 +16,7 @@ public class RulesAdapter extends RecyclerView.Adapter<RulesAdapter.RuleViewHold
 
     private final int ruleItems;
     private List<String> rules = new ArrayList<>();
-    private int typeOfRules;
+    private final int typeOfRules;
 
 
     public RulesAdapter(int ruleItems, int typeOfRules) {
@@ -29,7 +29,7 @@ public class RulesAdapter extends RecyclerView.Adapter<RulesAdapter.RuleViewHold
     public RuleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.list_gamerules, parent, false);
+        View view = inflater.inflate(R.layout.rv_gamerules, parent, false);
 
         rules = Arrays.asList(parent.getContext().getResources().getStringArray(typeOfRules));
 
