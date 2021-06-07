@@ -22,14 +22,13 @@
             android:visibility="gone">
     </androidx.recyclerview.widget.RecyclerView>
 
-    <ImageView
-            android:id="@+id/icon_gallery"
-            android:background="@color/black"
-            android:src="@drawable/basketball_player_1"
-            android:layout_width="240dp"
-            android:layout_height="240dp"
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_navigation"
             android:visibility="gone">
-    </ImageView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

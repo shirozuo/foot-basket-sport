@@ -29,7 +29,7 @@ public class RulesAdapter extends RecyclerView.Adapter<RulesAdapter.RuleViewHold
     public RuleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.rv_gamerules, parent, false);
+        View view = inflater.inflate(R.layout.rv_rules, parent, false);
 
         rules = Arrays.asList(parent.getContext().getResources().getStringArray(typeOfRules));
 
