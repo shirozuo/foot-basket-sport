@@ -48,18 +48,18 @@ public class RulesAdapter extends RecyclerView.Adapter<RulesAdapter.RuleViewHold
 
     class RuleViewHolder extends RecyclerView.ViewHolder {
 
-        TextView listItemRuleView;
-        TextView viewHolderIndex;
+        TextView tvIndexOfRule;
+        TextView tvTextOfRule;
 
         public RuleViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            listItemRuleView = itemView.findViewById(R.id.tv_rule_item);
-            viewHolderIndex = itemView.findViewById(R.id.tv_view_holder_rule);
+            tvIndexOfRule = itemView.findViewById(R.id.tv_rule_item);
+            tvTextOfRule = itemView.findViewById(R.id.tv_view_holder_rule);
         }
         void bind(int position){
-            listItemRuleView.setText(String.valueOf(position + 1));
-            viewHolderIndex.setText(rules.get(position));
+            tvIndexOfRule.setText(String.valueOf(position + 1));
+            tvTextOfRule.setText(rules.get(position));
         }
     }
 }
