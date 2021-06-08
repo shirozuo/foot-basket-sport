@@ -1,4 +1,4 @@
-package com.shirozuo.footbasketsport;
+package com.shirozuo.footbasketsport.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.shirozuo.footbasketsport.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

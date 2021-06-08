@@ -1,4 +1,4 @@
-package com.shirozuo.footbasketsport;
+package com.shirozuo.footbasketsport.adapters;
 
 import android.content.res.TypedArray;
 import android.view.LayoutInflater;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.shirozuo.footbasketsport.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

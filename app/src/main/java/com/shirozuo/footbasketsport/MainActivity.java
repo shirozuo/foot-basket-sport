@@ -6,6 +6,9 @@ import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.shirozuo.footbasketsport.adapters.GalleryAdapter;
+import com.shirozuo.footbasketsport.adapters.PlayersAdapter;
+import com.shirozuo.footbasketsport.adapters.RulesAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         LinearLayoutManager linearLayoutManager2 = new LinearLayoutManager(this);
-        LinearLayoutManager linearLayoutManager3 = new LinearLayoutManager(this);
+        LinearLayoutManager linearLayoutManager3 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
 
         rules.setLayoutManager(linearLayoutManager);
         players.setLayoutManager(linearLayoutManager2);
