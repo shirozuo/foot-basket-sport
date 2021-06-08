@@ -8,6 +8,11 @@ import android.os.Bundle;
 public class HomeActivity extends AppCompatActivity {
 
     Button buttonFootball, buttonBasketball;
+    public static boolean isFootball;
+
+    public static boolean isFootball() {
+        return isFootball;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +24,12 @@ public class HomeActivity extends AppCompatActivity {
     }
     private void click(){
         buttonFootball.setOnClickListener(v -> {
+            isFootball = true;
             Intent intent = new Intent(HomeActivity.this, MainActivity.class);
             startActivity(intent);
         });
         buttonBasketball.setOnClickListener(v -> {
+            isFootball = false;
             Intent intent = new Intent(HomeActivity.this, MainActivity.class);
             startActivity(intent);
         });

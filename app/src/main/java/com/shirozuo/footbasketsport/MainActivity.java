@@ -10,9 +10,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rules, players, gallery;
+    private PlayersAdapter playersAdapter;
+    private RulesAdapter rulesAdapter;
+    private GalleryAdapter galleryAdapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) throws RuntimeException {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -29,16 +32,23 @@ public class MainActivity extends AppCompatActivity {
         gallery.setLayoutManager(linearLayoutManager3);
 
         players.setHasFixedSize(true);
-        PlayersAdapter playersAdapter = new PlayersAdapter(10, R.array.basketball_players, R.array.basketball_players_image);
-        players.setAdapter(playersAdapter);
-
         rules.setHasFixedSize(true);
-        RulesAdapter rulesAdapter = new RulesAdapter(12, R.array.basketball_rules);
-        rules.setAdapter(rulesAdapter);
-
         gallery.setHasFixedSize(true);
-        GalleryAdapter galleryAdapter = new GalleryAdapter(10, R.array.basketball_image);
+
+        if (HomeActivity.isFootball()) {
+            playersAdapter = new PlayersAdapter(10, R.array.football_players, R.array.football_players_image);
+            rulesAdapter = new RulesAdapter(12, R.array.football_rules);
+            galleryAdapter = new GalleryAdapter(10, R.array.football_image);
+        } else {
+            playersAdapter = new PlayersAdapter(10, R.array.basketball_players, R.array.basketball_players_image);
+            rulesAdapter = new RulesAdapter(12, R.array.basketball_rules);
+            galleryAdapter = new GalleryAdapter(10, R.array.basketball_image);
+        }
+
+        players.setAdapter(playersAdapter);
+        rules.setAdapter(rulesAdapter);
         gallery.setAdapter(galleryAdapter);
+
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
 
