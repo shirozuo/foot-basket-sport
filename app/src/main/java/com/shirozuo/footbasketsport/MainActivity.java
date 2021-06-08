@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         LinearLayoutManager linearLayoutManager2 = new LinearLayoutManager(this);
-        LinearLayoutManager linearLayoutManager3 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
+        LinearLayoutManager linearLayoutManager3 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
         rules.setLayoutManager(linearLayoutManager);
         players.setLayoutManager(linearLayoutManager2);
